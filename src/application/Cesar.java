@@ -88,6 +88,6 @@ public class Cesar {
 		for (char d : decifrado) {
 			System.out.print(d);
 		}
-		
+		System.out.println();
 	}
 }

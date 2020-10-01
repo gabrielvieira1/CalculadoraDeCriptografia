@@ -29,17 +29,17 @@ public class Program {
 			System.out.println("|--- PLAYFAIR ----------------------|");
 			System.out.println("|                                   |");
 			System.out.println("|(5) para criptografar mensagem     |");
-			System.out.println("|    ou descriptografar mensagem    |");
+			System.out.println("|(6) para descriptografar mensagem  |");
 			System.out.println("|                                   |");
 			System.out.println("|--- POLIALFABETICA - VIGENERE -----|");
 			System.out.println("|                                   |");
-			System.out.println("|(6) para criptografar mensagem     |");
-			System.out.println("|(7) para descriptografar mensagem  |");
+			System.out.println("|(7) para criptografar mensagem     |");
+			System.out.println("|(8) para descriptografar mensagem  |");
 			System.out.println("|                                   |");
 			System.out.println("|--- PRODUTO - ENIGMA --------------|");
 			System.out.println("|                                   |");
-			System.out.println("|(8) para criptografar mensagem     |");
-			System.out.println("|(9) para descriptografar mensagem  |");
+			System.out.println("|(9) para criptografar mensagem     |");
+			System.out.println("|(10) para descriptografar mensagem |");
 			System.out.println("|                                   |");
 			System.out.println("|(0) para sair do software          |");
 			System.out.println("|___________________________________|");
@@ -105,7 +105,7 @@ public class Program {
 
 			
 				System.out.println("Informe a mensagem que deseja cifrar");
-				mensagem = scan.next();
+				mensagem = scan.next().replaceAll(" ", "");
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
 				Playfair.encriptar(mensagem, chaveString);
@@ -114,6 +114,18 @@ public class Program {
 				break;
 				
 			case "6":
+
+				
+				System.out.println("Informe a mensagem que deseja decifrar");
+				mensagem = scan.next().replaceAll(" ", "");
+				System.out.println("Informe a chave");
+				chaveString = scan.next();
+				Playfair.desencriptar(mensagem, chaveString);
+				Thread.sleep(3000);
+				
+				break;
+				
+			case "7":
 				
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine();
@@ -127,7 +139,7 @@ public class Program {
 				Thread.sleep(3000);
 				break;
 
-			case "7":
+			case "8":
 
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine();
@@ -141,9 +153,9 @@ public class Program {
 				Thread.sleep(3000);
 				break;
 				
-			case "8":
-				System.out.println("Informe a mensagem que deseja decifrar");
-				mensagem = scan.nextLine();
+			case "9":
+				System.out.println("Informe a mensagem que deseja cifrar");
+				mensagem = scan.nextLine().replaceAll(" ", "");
 
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
@@ -154,9 +166,9 @@ public class Program {
 				Thread.sleep(3000);
 				break;
 				
-			case "9":
+			case "10":
 				System.out.println("Informe a mensagem que deseja decifrar");
-				mensagem = scan.nextLine();
+				mensagem = scan.nextLine().replaceAll(" ", "");
 
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
