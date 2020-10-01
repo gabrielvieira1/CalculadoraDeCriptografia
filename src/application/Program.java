@@ -46,13 +46,13 @@ public class Program {
 			sair = scan.next();
 			scan.nextLine();
 			//System.out.println(" ");
-
+			// vguvgfqvguvg
 			switch (sair) {
 
 			case "1":
 
 				System.out.println("Informe a mensagem que deseja cifrar");
-				mensagem = scan.nextLine();
+				mensagem = scan.nextLine().replaceAll(" ", "");
 
 				System.out.println("Informe a chave");
 				chave = scan.nextInt();

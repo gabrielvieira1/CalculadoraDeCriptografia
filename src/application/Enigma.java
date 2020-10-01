@@ -15,6 +15,24 @@ public class Enigma {
 	public static Scanner sc;
 
 	public Enigma() {
+		
+	/*	List<String> codigosList;
+		
+		codigosList = new ArrayList<String>
+        (Arrays.asList("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z".split(",")));
+        Collections.shuffle(codigosList);
+        rotor1 = new Rotor(codigosList, 1);
+        
+        Collections.shuffle(codigosList);
+        rotor2 = new Rotor(codigosList, 2);
+        
+        Collections.shuffle(codigosList);
+        rotor3 = new Rotor(codigosList, 3);
+        
+        rotorList = new ArrayList<Rotor>();
+        rotorList.add(rotor1);
+        rotorList.add(rotor2);
+        rotorList.add(rotor3);*/
 
 		codigosList = new ArrayList<String>();
 		codigosList.add("E");
