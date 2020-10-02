@@ -8,7 +8,7 @@ public class Monoalfabetica {
 
 	public Monoalfabetica() {
 		alfabeto = gerarAlfabeto();
-		System.out.print(alfabeto);
+	//	System.out.print(alfabeto);
 	}
 
 	public String subsAlfabetica_DESCRIP(String mensagem) {
