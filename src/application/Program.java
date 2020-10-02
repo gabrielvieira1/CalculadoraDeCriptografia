@@ -46,13 +46,13 @@ public class Program {
 			sair = scan.next();
 			scan.nextLine();
 			//System.out.println(" ");
-
+			// vguvgfqvguvg
 			switch (sair) {
 
 			case "1":
 
 				System.out.println("Informe a mensagem que deseja cifrar");
-				mensagem = scan.nextLine();
+				mensagem = scan.nextLine().replaceAll(" ", "");
 
 				System.out.println("Informe a chave");
 				chave = scan.nextInt();
@@ -160,9 +160,8 @@ public class Program {
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
 				
-				Enigma enigmaCript = new Enigma();
+				Enigma.gerarRotores();
 				Enigma.cifrar(mensagem, chaveString);
-				//System.out.println("Resultado: ");
 				Thread.sleep(3000);
 				break;
 				
@@ -173,9 +172,8 @@ public class Program {
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
 				
-				Enigma enigmaDecript = new Enigma();
+				Enigma.gerarRotores();
 				Enigma.decifrar(mensagem, chaveString);
-				//System.out.println("Resultado: ");
 				Thread.sleep(3000);
 				break;
 				
