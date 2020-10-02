@@ -8,7 +8,7 @@ public class Program {
 	static Monoalfabetica calc = new Monoalfabetica();
 
 	public static void main(String[] args) throws InterruptedException {
-		
+
 		String chaveString, sair, mensagem, cripMensagem, desCripMensagem;
 		int chave;
 
@@ -77,8 +77,7 @@ public class Program {
 				break;
 
 			case "3":
-				
-				
+
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine();
 				mensagem = mensagem.toUpperCase();
@@ -90,7 +89,7 @@ public class Program {
 				break;
 
 			case "4":
-				
+
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine();
 				mensagem = mensagem.toUpperCase();
@@ -100,33 +99,31 @@ public class Program {
 				Thread.sleep(3000);
 
 				break;
-				
+
 			case "5":
 
-			
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.next().replaceAll(" ", "");
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
 				Playfair.encriptar(mensagem, chaveString);
 				Thread.sleep(3000);
-				
+
 				break;
-				
+
 			case "6":
 
-				
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.next().replaceAll(" ", "");
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
 				Playfair.desencriptar(mensagem, chaveString);
 				Thread.sleep(3000);
-				
+
 				break;
-				
+
 			case "7":
-				
+
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine();
 
@@ -152,19 +149,19 @@ public class Program {
 				scan.nextLine();
 				Thread.sleep(3000);
 				break;
-				
+
 			case "9":
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine().replaceAll(" ", "");
 
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
-				
+			
 				Enigma.gerarRotores();
 				Enigma.cifrar(mensagem, chaveString);
 				Thread.sleep(3000);
 				break;
-				
+
 			case "10":
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine().replaceAll(" ", "");
@@ -176,7 +173,7 @@ public class Program {
 				Enigma.decifrar(mensagem, chaveString);
 				Thread.sleep(3000);
 				break;
-				
+
 			case "0":
 				break;
 			default:

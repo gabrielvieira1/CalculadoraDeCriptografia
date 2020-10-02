@@ -21,6 +21,7 @@ public class Enigma {
 	String posicaoInicialRotor;
 	String mensagem;
 	List<String> alfabetoList = new ArrayList<String>(Arrays.asList("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z".split(",")));
+	
 	List<String> refletorBList = new ArrayList<String>(Arrays.asList("Y,R,U,H,Q,S,L,D,P,X,N,G,O,K,M,I,E,B,F,Z,C,W,V,J,A,T".split(",")));
 	
 	int[] posicaoGeralRotor;
@@ -266,6 +267,4 @@ public class Enigma {
 		listaA.add(temporario);
 		rotorList.get(numeroAtualRotor).configRotor = listaA;
 	}
-	
-	
 }

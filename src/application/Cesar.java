@@ -45,7 +45,7 @@ public class Cesar {
 
 		}
 		System.out.println();
-		decifrar(novo, chave);
+	//	decifrar(novo, chave);
 	}
 
 	public static void decifrar(String texto, int chave) {
@@ -75,6 +75,7 @@ public class Cesar {
 
 						if ((j + chave) >= 50) {
 							decifrado[i] = alfabeto[((j - 26) - chave)];
+
 						} else {
 
 							decifrado[i] = alfabeto[j - chave];
