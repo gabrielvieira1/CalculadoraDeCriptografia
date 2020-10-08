@@ -1,30 +1,30 @@
 ## Calculadora Criptográfica
 
 ### Metodos aceitos:
-- Cifra de Cesar
-- Substituição Monoalfabetica 
+- Cifra de César
+- Substituição Monoalfabética 
 - Cifra de Playfair
-- Cifra de Vigenere
+- Cifra de Vigenère
 - Produto - Enigma
 ---
 ### Funcionamento:
 
 Ao iniciar o sistema, vai pedir para digitar uma das opcões listadas abaixo 
 <blockquote>
-1 para criptografar com a CIFRA DE CESAR<br>                             
-2 para descriptografar com a CIFRA DE CESAR<br>                             
-3 para criptografar com a SUBSTITUIÇÃO MONOALFABETICA <br>
-4 para descriptografar com a SUBSTITUIÇÃO MONOALFABETICA <br>
+1 para criptografar com a CIFRA DE CÉSAR<br>                             
+2 para descriptografar com a CIFRA DE CÉSAR<br>                             
+3 para criptografar com a SUBSTITUIÇÃO MONOALFABÉTICA <br>
+4 para descriptografar com a SUBSTITUIÇÃO MONOALFABÉTICA <br>
 5 para criptografar com a CIFRA PLAYFAIR<br>  
 6 para descriptografar com a CIFRA PLAYFAIR<br>  
-7 para criptografar com a POLIALFABETICA - VIGENERE  <br> 
-8 para descriptografar com a POLIALFABETICA - VIGENERE  <br> 
+7 para criptografar com a POLIALFABÉTICA - VIGENÈRE  <br> 
+8 para descriptografar com a POLIALFABÉTICA - VIGENÈRE  <br> 
 9 para criptografar com a PRODUTO - ENIGMA<br>   
 10 para descriptografar com a PRODUTO - ENIGMA<br>   
 0 para sair do software  <br>
 </blockquote>          
 <br>
-Selecionando por exemplo CIFRA DE CESAR, opção 1, temos a seguinte resposta:
+Selecionando por exemplo CIFRA DE CÉSAR, opção 1, temos a seguinte resposta:
 <br>
 
 <blockquote>Informe a mensagem que deseja cifrar </blockquote>

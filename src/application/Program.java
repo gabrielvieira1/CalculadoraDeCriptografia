@@ -13,6 +13,7 @@ public class Program {
 		int chave;
 
 		do {
+			UI.clearScreen();
 			System.out.println("|-----------------------------------|");
 			System.out.println("|    Calculadora Criptografica      |");
 			System.out.println("|-----------------------------------|");
@@ -50,7 +51,7 @@ public class Program {
 			switch (sair) {
 
 			case "1":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine().replaceAll(" ", "");
 
@@ -63,7 +64,7 @@ public class Program {
 				break;
 
 			case "2":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine();
 
@@ -77,7 +78,7 @@ public class Program {
 				break;
 
 			case "3":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine();
 				mensagem = mensagem.toUpperCase();
@@ -89,7 +90,7 @@ public class Program {
 				break;
 
 			case "4":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine();
 				mensagem = mensagem.toUpperCase();
@@ -101,7 +102,7 @@ public class Program {
 				break;
 
 			case "5":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.next().replaceAll(" ", "");
 				System.out.println("Informe a chave");
@@ -112,7 +113,7 @@ public class Program {
 				break;
 
 			case "6":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.next().replaceAll(" ", "");
 				System.out.println("Informe a chave");
@@ -123,7 +124,7 @@ public class Program {
 				break;
 
 			case "7":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine();
 
@@ -137,7 +138,7 @@ public class Program {
 				break;
 
 			case "8":
-
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine();
 
@@ -151,6 +152,7 @@ public class Program {
 				break;
 
 			case "9":
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja cifrar");
 				mensagem = scan.nextLine().replaceAll(" ", "");
 
@@ -163,6 +165,7 @@ public class Program {
 				break;
 
 			case "10":
+				UI.clearScreen();
 				System.out.println("Informe a mensagem que deseja decifrar");
 				mensagem = scan.nextLine().replaceAll(" ", "");
 
