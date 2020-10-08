@@ -46,7 +46,7 @@ public class Program {
 			System.out.println("|___________________________________|");
 			sair = scan.next();
 			scan.nextLine();
-			// System.out.println(" ");
+			//System.out.println(" ");
 			// vguvgfqvguvg
 			switch (sair) {
 
@@ -158,7 +158,7 @@ public class Program {
 
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
-
+			
 				Enigma.gerarRotores();
 				Enigma.cifrar(mensagem, chaveString);
 				Thread.sleep(3000);
@@ -171,7 +171,7 @@ public class Program {
 
 				System.out.println("Informe a chave");
 				chaveString = scan.next();
-
+				
 				Enigma.gerarRotores();
 				Enigma.decifrar(mensagem, chaveString);
 				Thread.sleep(3000);

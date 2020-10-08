@@ -7,20 +7,21 @@ import java.util.regex.Pattern;
 public class Enigma {
 
 	static Scanner scan = new Scanner(System.in);
-	public static List<String> codigosList;
-	public static List<String> listAlfabeto1 = new ArrayList<String>(Arrays.asList("H,P,G,J,S,Z,X,A,I,M,N,B,V,R,L,Y,Q,U,C,E,O,F,W,D,T,K".split(",")));
-	public static List<String> listAlfabeto2 = new ArrayList<String>(Arrays.asList("N,V,X,J,Y,L,M,H,S,B,T,C,F,I,R,Z,D,G,O,W,E,Q,P,K,A,U".split(",")));
-	public static List<String> listAlfabeto3 = new ArrayList<String>(Arrays.asList("K,Y,G,F,D,Q,M,B,L,X,V,N,C,Z,U,H,T,W,R,I,E,P,S,O,A,J".split(",")));
+	static List<String> codigosList;
+	static List<String> listAlfabeto1 = new ArrayList<String>(Arrays.asList("H,P,G,J,S,Z,X,A,I,M,N,B,V,R,L,Y,Q,U,C,E,O,F,W,D,T,K".split(",")));
+	static List<String> listAlfabeto2 = new ArrayList<String>(Arrays.asList("N,V,X,J,Y,L,M,H,S,B,T,C,F,I,R,Z,D,G,O,W,E,Q,P,K,A,U".split(",")));
+	static List<String> listAlfabeto3 = new ArrayList<String>(Arrays.asList("K,Y,G,F,D,Q,M,B,L,X,V,N,C,Z,U,H,T,W,R,I,E,P,S,O,A,J".split(",")));
 
-	public static List<String> alfabeto;
-	public static List<Rotor> rotorList;
-	public Rotor rotor1;
-	public Rotor rotor2;
-	public Rotor rotor3;
+	static List<String> alfabeto;
+	static List<Rotor> rotorList;
+	static Rotor rotor1;
+	static Rotor rotor2;
+	static Rotor rotor3;
 	
 	String posicaoInicialRotor;
 	String mensagem;
-	List<String> alfabetoList = new ArrayList<String>(Arrays.asList("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z".split(",")));;
+	List<String> alfabetoList = new ArrayList<String>(Arrays.asList("A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z".split(",")));
+	
 	List<String> refletorBList = new ArrayList<String>(Arrays.asList("Y,R,U,H,Q,S,L,D,P,X,N,G,O,K,M,I,E,B,F,Z,C,W,V,J,A,T".split(",")));
 	
 	int[] posicaoGeralRotor;
@@ -34,13 +35,13 @@ public class Enigma {
 	public static void gerarRotores() {
 
 		codigosList = new ArrayList<String>(listAlfabeto1);
-		Rotor rotor1 = new Rotor(codigosList, 1);
+ 		rotor1 = new Rotor(codigosList, 1);
 
 		codigosList = new ArrayList<String>(listAlfabeto2);
-		Rotor rotor2 = new Rotor(codigosList, 2);
+		rotor2 = new Rotor(codigosList, 2);
 
 		codigosList = new ArrayList<String>(listAlfabeto3);
-		Rotor rotor3 = new Rotor(codigosList, 3);
+		rotor3 = new Rotor(codigosList, 3);
 
 		rotorList = new ArrayList<Rotor>();
 		rotorList.add(rotor1);
@@ -129,8 +130,8 @@ public class Enigma {
 			}
 			decodificado.append(letra);
 		}
-		System.out.println("Mensagem Cifrada : " + mensagem.toString() + " -----------------------------------------");
-		System.out.println("Mensagem Decifrada : " + decodificado.toString() + " -----------------------------------------");
+		System.out.println("Mensagem Cifrada : " + mensagem.toString());
+		System.out.println("Mensagem Decifrada : " + decodificado.toString());
 	}
 
 	public void codificar() {
@@ -148,8 +149,8 @@ public class Enigma {
 			}
 			decodificado.append(letra);
 		}
-		System.out.println("Mensagem Cifrada : " + decodificado.toString() + " -----------------------------------------");
-		System.out.println("Mensagem Original : " + mensagem.toString() + " -----------------------------------------");
+		System.out.println("Mensagem Cifrada : " + decodificado.toString());
+		System.out.println("Mensagem Original : " + mensagem.toString());
 	}
 
 	public int pegarIndiceCircular(int indice, int tamanho) {
