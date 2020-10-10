@@ -41,7 +41,7 @@ Vamos colocar por exemplo como resposta para o sistema o número 2 e temos a seg
 Esperando por mais 3 segundo, o sistema volta para o menu principal perguntando se deseja fazer mais alguma coisa ou digitar 0 para finalizar.
 
 ## 🔖 Layout
----
+
 <h1 align="center">
     <img alt="Calculadora" title="#calc-cripto" src=".github/CalcCripto.GIF" />
 </h1>
