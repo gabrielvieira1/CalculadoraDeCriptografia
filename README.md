@@ -1,13 +1,13 @@
 ## Calculadora Criptográfica
 
-### Metodos aceitos:
+### 🚀 Metodos aceitos:
 - Cifra de César
 - Substituição Monoalfabética 
 - Cifra de Playfair
 - Cifra de Vigenère
 - Produto - Enigma
 ---
-### Funcionamento:
+### 🔥 Funcionamento:
 
 Ao iniciar o sistema, vai pedir para digitar uma das opcões listadas abaixo 
 <blockquote>
@@ -39,3 +39,9 @@ Vamos colocar por exemplo como resposta para o sistema o número 2 e temos a seg
 <blockquote> Resultado da cifragem: icdtkgn </blockquote>
 <br>
 Esperando por mais 3 segundo, o sistema volta para o menu principal perguntando se deseja fazer mais alguma coisa ou digitar 0 para finalizar.
+
+## 🔖 Layout
+---
+<h1 align="center">
+    <img alt="Calculadora" title="#calc-cripto" src=".github/CalcCripto.GIF" />
+</h1>
